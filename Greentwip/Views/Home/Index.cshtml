@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container-fluid show-top-margin">
+    <img height="32" vspace="10" hspace="10" src='@Url.Content("~/Content/Images/Website/twip.png")' />
+    <p class="lead">Greentwip is a startup launched to provide a new set of games, toys, and multimedia content.</p>
+    <p class="lead">You can create (once registered), Twitter and Facebook app cards from links in the Marketing section.</p>
+
+    @Html.ActionLink("Marketing", "UrlGenerator", "Marketing", null, new { @class = "btn btn-primary btn-lg" })
+    @Html.ActionLink("Images", "Images", "Multimedia", null, new { @class = "btn btn-primary btn-lg" })
+    @Html.ActionLink("Videos", "Videos", "Multimedia", null, new { @class = "btn btn-primary btn-lg" })
+    @Html.ActionLink("Games", "Games", "Multimedia", null, new { @class = "btn btn-primary btn-lg" })
+</div>

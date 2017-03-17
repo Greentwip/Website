@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Videos";
+}
+
+
+@section styles
+{
+    <link href="@Url.Content("~/Content/prettyPhoto.css")" rel="stylesheet" />
+}
+
+
+
+
+
+
+<h2>@ViewBag.Title</h2>
+<div>
+    <p>
+        A curated list of cool videos. 
+    </p>
+
+    <div id="gallery">
+        @*<a href="images/fullscreen/1.jpg" rel="prettyPhoto[pp_gal]" title="You can add caption to pictures."><img src="images/thumbnails/t_1.jpg" width="60" height="60" alt="Red round shape" /></a>
+
+        <a href="images/fullscreen/2.jpg" rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_2.jpg" width="60" height="60" alt="Nice building" /></a>
+
+        <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_3.jpg" width="60" height="60" alt="Fire!" /></a>
+
+        <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_4.jpg" width="60" height="60" alt="Rock climbing" /></a>
+
+        <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_5.jpg" width="60" height="60" alt="Fly kite, fly!" /></a>
+        <a href="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=GameGrumps" rel="prettyPhoto" title=""><img src="images/thumbnails/flash-logo.jpg" alt="YouTube" width="60" /></a>
+    
+    
+        <div id="static_video"></div>*@
+
+        <iframe width="300" height="200" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=GameGrumps" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <iframe width="300" height="200" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=edd00chan" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <iframe width="300" height="200" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=MrDonMakila" frameborder="0" allowfullscreen="allowfullscreen"></iframe>        
+
+    </div>
+
+
+</div>
+
+@section scripts
+{
+    @*<script src="@Url.Content("~/Scripts/jquery.prettyPhoto.js")"></script>
+
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function(){
+        $("a[rel^='prettyPhoto']").prettyPhoto();
+      });
+    </script> *@
+}
+
